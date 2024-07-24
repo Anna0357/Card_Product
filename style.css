@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; 
+}
+
+button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+body{
+    background: rgb(255, 192, 203, 0.5); 
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+    font-family: "Playfair Display", serif;
+    color: #8d8d8d;
+}
+
+.container{
+    background: white;
+    display: flex;
+    box-sizing: border-box;
+    height: 500px;
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
+}
+
+.img{
+    width: 50%;
+    object-fit: cover;
+    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.text{
+    width: 310px;
+    margin: 30px;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Bentham", serif;
+    color: #474747;
+    margin: 0;
+}
+
+p{
+    margin: 25px 0;
+}
+
+ul{
+    color: green; 
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Raleway", serif;
+    gap: 5px;
+    margin-top: 40px;
+}
+li{
+    font-size: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: green;
+    border-radius: 2em;
+    padding: 1px 10px;
+    justify-content: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}   
+ 
+.end{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.cost{
+    font-size: 34px;
+    font-family: "Suranna", serif;
+    font-weight: bold;
+    color: #474747;
+    margin-right: 30px;
+}
+
+ button{
+    box-sizing: border-box;
+    width: 180px;
+    height: 40px;
+    background: rgb(255, 132, 0);
+    border-radius: 20px;
+    font-family: "Raleway", serif;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    justify-content: right;
+    transition:all 0.25s ease;
+ }
+
+ button:hover{
+    opacity: 0.8;
+ }
+
+ @media only screen and (max-width: 700px) {
+    .container{
+        flex-direction: column;
+    }
+ }
